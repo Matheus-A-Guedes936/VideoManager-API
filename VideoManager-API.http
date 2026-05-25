@@ -25,8 +25,8 @@ POST {{VideoManager_API_HostAddress}}/api/Usuario/AdicionarUsuario
 Content-Type: application/json
 
 {
-  "nome": "teste5",
-  "email": "teste5@123.com",
+  "nome": "teste533",
+  "email": "teste5@1233.com",
   "senha": "1234567"
 }
 
