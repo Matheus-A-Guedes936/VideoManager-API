@@ -1,4 +1,4 @@
-﻿namespace GerenciadorDeVideos_API.Interface.IServices.IAuth
+﻿namespace VideoManager_API.Interface.IServices.IAuth
 {
     public interface IUsuarioLogadoService
     {

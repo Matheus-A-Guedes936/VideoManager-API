@@ -1,4 +1,4 @@
-﻿namespace GerenciadorDeVideos_API.Model
+﻿namespace VideoManager_API.Model
 {
     public class ResponseModel <T>
     {

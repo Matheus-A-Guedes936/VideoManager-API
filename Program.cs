@@ -1,10 +1,10 @@
-using GerenciadorDeVideos_API.Data;
-using GerenciadorDeVideos_API.Interface.IRepository;
-using GerenciadorDeVideos_API.Interface.IServices;
-using GerenciadorDeVideos_API.Interface.IServices.IAuth;
-using GerenciadorDeVideos_API.Repository;
-using GerenciadorDeVideos_API.Services;
-using GerenciadorDeVideos_API.Services.Auth;
+using VideoManager_API.Data;
+using VideoManager_API.Interface.IRepository;
+using VideoManager_API.Interface.IServices;
+using VideoManager_API.Interface.IServices.IAuth;
+using VideoManager_API.Repository;
+using VideoManager_API.Services;
+using VideoManager_API.Services.Auth;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi;

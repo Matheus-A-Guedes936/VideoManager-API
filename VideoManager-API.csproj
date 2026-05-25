@@ -4,7 +4,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>GerenciadorDeVideos_API</RootNamespace>
+    <RootNamespace>VideoManager_API</RootNamespace>
     <UserSecretsId>a0491745-bd7b-4c35-8425-82b22f593f1b</UserSecretsId>
   </PropertyGroup>
 

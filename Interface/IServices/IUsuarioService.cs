@@ -1,7 +1,7 @@
-﻿using GerenciadorDeVideos_API.DTOs.Usuarios;
-using GerenciadorDeVideos_API.Model;
+﻿using VideoManager_API.DTOs.Usuarios;
+using VideoManager_API.Model;
 
-namespace GerenciadorDeVideos_API.Interface.IServices
+namespace VideoManager_API.Interface.IServices
 {
     public interface IUsuarioService
     {

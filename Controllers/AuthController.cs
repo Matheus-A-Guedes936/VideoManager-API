@@ -1,10 +1,10 @@
-﻿using GerenciadorDeVideos_API.DTOs.Usuarios;
-using GerenciadorDeVideos_API.Interface.IServices;
-using GerenciadorDeVideos_API.Model;
+﻿using VideoManager_API.DTOs.Usuarios;
+using VideoManager_API.Interface.IServices;
+using VideoManager_API.Model;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace GerenciadorDeVideos_API.Controllers
+namespace VideoManager_API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

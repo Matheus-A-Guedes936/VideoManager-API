@@ -1,6 +1,6 @@
-﻿using GerenciadorDeVideos_API.Model;
+﻿using VideoManager_API.Model;
 
-namespace GerenciadorDeVideos_API.Interface.IRepository
+namespace VideoManager_API.Interface.IRepository
 {
     public interface IUsuarioRepository
     {

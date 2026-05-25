@@ -1,27 +1,27 @@
-@GerenciadorDeVideos_API_HostAddress = http://localhost:5003
+@VideoManager_API_HostAddress = http://localhost:5003
 
 ### --- ENDPOINTS DE Usuários ---
 
 ### Listar todos os usuários
-GET {{GerenciadorDeVideos_API_HostAddress}}/api/Usuario/BuscarTodosUsuarios
+GET {{VideoManager_API_HostAddress}}/api/Usuario/BuscarTodosUsuarios
 Accept: application/json
 
 ###
 
 ### Buscar usuário por ID  
-GET {{GerenciadorDeVideos_API_HostAddress}}/api/Usuario/BuscarUsuarioPorID/1
+GET {{VideoManager_API_HostAddress}}/api/Usuario/BuscarUsuarioPorID/1
 Accept: application/json
 
 ###
 
 ### Buscar por Email
-GET {{GerenciadorDeVideos_API_HostAddress}}/api/Usuario/BuscarUsuarioPorEmail/matheus2@teste.com
+GET {{VideoManager_API_HostAddress}}/api/Usuario/BuscarUsuarioPorEmail/matheus2@teste.com
 Accept: application/json
 
 ###
 
 ### Criar um novo usuário
-POST {{GerenciadorDeVideos_API_HostAddress}}/api/Usuario/AdicionarUsuario
+POST {{VideoManager_API_HostAddress}}/api/Usuario/AdicionarUsuario
 Content-Type: application/json
 
 {
@@ -33,7 +33,7 @@ Content-Type: application/json
 ###
 
 ### Editar usuário 
-PUT {{GerenciadorDeVideos_API_HostAddress}}/api/Usuario/EditarUsuario/1
+PUT {{VideoManager_API_HostAddress}}/api/Usuario/EditarUsuario/1
 Content-Type: application/json
 
 {
@@ -46,43 +46,43 @@ Content-Type: application/json
 ###
 
 ### Remover usuário
-DELETE {{GerenciadorDeVideos_API_HostAddress}}/api/Usuario/RemoverUsuario/2
+DELETE {{VideoManager_API_HostAddress}}/api/Usuario/RemoverUsuario/2
 
 
 ### --- ENDPOINTS DE VÍDEOS ---
 
 ### Listar todos os vídeos
-GET {{GerenciadorDeVideos_API_HostAddress}}/api/Videos/BuscarTodosVideos
+GET {{VideoManager_API_HostAddress}}/api/Videos/BuscarTodosVideos
 Accept: application/json
 
 ###
 
 ### Buscar vídeo por ID
-GET {{GerenciadorDeVideos_API_HostAddress}}/api/Videos/BuscarVideoPorID/7
+GET {{VideoManager_API_HostAddress}}/api/Videos/BuscarVideoPorID/7
 Accept: application/json
 
 ###
 
 ### Buscar vídeos por título
-GET {{GerenciadorDeVideos_API_HostAddress}}/api/Videos/BuscarVideosPorTitulo/teste
+GET {{VideoManager_API_HostAddress}}/api/Videos/BuscarVideosPorTitulo/teste
 Accept: application/json
 
 ###
 
 ### Buscar vídeos por categoria (É um Enum, 1 a 5)
-GET {{GerenciadorDeVideos_API_HostAddress}}/api/Videos/BuscarVideosPorCategoria/5
+GET {{VideoManager_API_HostAddress}}/api/Videos/BuscarVideosPorCategoria/5
 Accept: application/json
 
 ###
 
 ### Buscar vídeos por ID do Usuário
-GET {{GerenciadorDeVideos_API_HostAddress}}/api/Videos/BuscarVideosPorUsuarioID/3
+GET {{VideoManager_API_HostAddress}}/api/Videos/BuscarVideosPorUsuarioID/3
 Accept: application/json
 
 ###
 
 ### Adicionar um novo vídeo (PS : aparentemente esse .http não lida muito bem com o upload de arquivos, se for testar aconselho utilizar o swagger ou o scalar)
-POST {{GerenciadorDeVideos_API_HostAddress}}/api/Videos/AdicionarVideo
+POST {{VideoManager_API_HostAddress}}/api/Videos/AdicionarVideo
 Content-Type: multipart/form-data; boundary=boundary
 
 --boundary
@@ -107,7 +107,7 @@ Content-Type: video/mp4
 ###
 
 ### Editar dados do vídeo (A categoria precisa estar listada no Enum, se preferir poe de 1 a 5)
-PUT {{GerenciadorDeVideos_API_HostAddress}}/api/Videos/EditarVideo/2
+PUT {{VideoManager_API_HostAddress}}/api/Videos/EditarVideo/2
 Content-Type: application/json
 
 {
@@ -118,4 +118,4 @@ Content-Type: application/json
 ###
 
 ### Remover vídeo
-DELETE {{GerenciadorDeVideos_API_HostAddress}}/api/Videos/RemoverVideo/2
+DELETE {{VideoManager_API_HostAddress}}/api/Videos/RemoverVideo/2

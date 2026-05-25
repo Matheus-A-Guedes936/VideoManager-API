@@ -1,6 +1,6 @@
-﻿using GerenciadorDeVideos_API.Model;
+﻿using VideoManager_API.Model;
 
-namespace GerenciadorDeVideos_API.Interface.IServices.IAuth
+namespace VideoManager_API.Interface.IServices.IAuth
 {
     public interface ITokenService
     {

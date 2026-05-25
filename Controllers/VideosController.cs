@@ -1,13 +1,13 @@
-﻿using GerenciadorDeVideos_API.DTOs.Videos;
-using GerenciadorDeVideos_API.Interface.IServices;
-using GerenciadorDeVideos_API.Model;
-using GerenciadorDeVideos_API.Model.Enums;
+﻿using VideoManager_API.DTOs.Videos;
+using VideoManager_API.Interface.IServices;
+using VideoManager_API.Model;
+using VideoManager_API.Model.Enums;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Formats.Asn1;
 
-namespace GerenciadorDeVideos_API.Controllers
+namespace VideoManager_API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

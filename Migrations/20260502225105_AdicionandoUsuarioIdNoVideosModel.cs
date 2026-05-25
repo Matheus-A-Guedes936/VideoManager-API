@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace GerenciadorDeVideos_API.Migrations
+namespace VideoManager_API.Migrations
 {
     /// <inheritdoc />
     public partial class AdicionandoUsuarioIdNoVideosModel : Migration

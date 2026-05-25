@@ -1,4 +1,4 @@
-# GerenciadorDeVideos-API
+# VideoManager-API
 
 Esta é uma API desenvolvida em .NET 10 (C#) para o consumo e postagem de vídeos em html e android.
 

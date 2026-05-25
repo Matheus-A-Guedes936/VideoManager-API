@@ -1,7 +1,7 @@
-﻿using GerenciadorDeVideos_API.Model;
+﻿using VideoManager_API.Model;
 using Microsoft.EntityFrameworkCore;
 
-namespace GerenciadorDeVideos_API.Data
+namespace VideoManager_API.Data
 {
     public class AppDbContext : DbContext
     {

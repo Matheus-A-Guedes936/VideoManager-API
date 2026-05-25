@@ -1,6 +1,6 @@
-﻿using GerenciadorDeVideos_API.Model.Enums;
+﻿using VideoManager_API.Model.Enums;
 
-namespace GerenciadorDeVideos_API.Model
+namespace VideoManager_API.Model
 {
     public class VideosModel
     {

@@ -1,4 +1,4 @@
-﻿namespace GerenciadorDeVideos_API.Model.Enums
+﻿namespace VideoManager_API.Model.Enums
 {
     public enum CategoriaVideo
     {

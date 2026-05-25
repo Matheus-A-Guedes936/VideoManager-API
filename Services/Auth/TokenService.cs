@@ -1,11 +1,11 @@
-﻿using GerenciadorDeVideos_API.Interface.IServices.IAuth;
-using GerenciadorDeVideos_API.Model;
+﻿using VideoManager_API.Interface.IServices.IAuth;
+using VideoManager_API.Model;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace GerenciadorDeVideos_API.Services.Auth
+namespace VideoManager_API.Services.Auth
 {
     public class TokenService : ITokenService
     {

@@ -1,12 +1,12 @@
-﻿using GerenciadorDeVideos_API.DTOs.Videos;
-using GerenciadorDeVideos_API.Interface.IRepository;
-using GerenciadorDeVideos_API.Interface.IServices;
-using GerenciadorDeVideos_API.Interface.IServices.IAuth;
-using GerenciadorDeVideos_API.Model;
-using GerenciadorDeVideos_API.Model.Enums;
+﻿using VideoManager_API.DTOs.Videos;
+using VideoManager_API.Interface.IRepository;
+using VideoManager_API.Interface.IServices;
+using VideoManager_API.Interface.IServices.IAuth;
+using VideoManager_API.Model;
+using VideoManager_API.Model.Enums;
 using System.Runtime;
 
-namespace GerenciadorDeVideos_API.Services
+namespace VideoManager_API.Services
 {
     public class VideosService : IVideosService
     {

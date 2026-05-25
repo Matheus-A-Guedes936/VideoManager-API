@@ -1,7 +1,7 @@
-﻿using GerenciadorDeVideos_API.DTOs.Videos;
-using GerenciadorDeVideos_API.Model.Enums;
+﻿using VideoManager_API.DTOs.Videos;
+using VideoManager_API.Model.Enums;
 
-namespace GerenciadorDeVideos_API.Interface.IServices
+namespace VideoManager_API.Interface.IServices
 {
     public interface IVideosService
     {

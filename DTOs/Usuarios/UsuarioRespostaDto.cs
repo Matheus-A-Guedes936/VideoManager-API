@@ -1,4 +1,4 @@
-﻿namespace GerenciadorDeVideos_API.DTOs.Usuarios
+﻿namespace VideoManager_API.DTOs.Usuarios
 {
     public class UsuarioRespostaDto
     {

@@ -1,9 +1,9 @@
-﻿using GerenciadorDeVideos_API.Data;
-using GerenciadorDeVideos_API.Interface.IRepository;
-using GerenciadorDeVideos_API.Model;
+﻿using VideoManager_API.Data;
+using VideoManager_API.Interface.IRepository;
+using VideoManager_API.Model;
 using Microsoft.EntityFrameworkCore;
 
-namespace GerenciadorDeVideos_API.Repository
+namespace VideoManager_API.Repository
 {
     public class UsuarioRepository : IUsuarioRepository
     {

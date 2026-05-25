@@ -1,7 +1,7 @@
-﻿using GerenciadorDeVideos_API.Model.Enums;
+﻿using VideoManager_API.Model.Enums;
 using System.ComponentModel.DataAnnotations;
 
-namespace GerenciadorDeVideos_API.DTOs.Videos
+namespace VideoManager_API.DTOs.Videos
 {
     public class VideosAtualizacaoDto
     {

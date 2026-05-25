@@ -1,6 +1,6 @@
-﻿using GerenciadorDeVideos_API.Interface.IServices.IAuth;
+﻿using VideoManager_API.Interface.IServices.IAuth;
 
-namespace GerenciadorDeVideos_API.Services.Auth
+namespace VideoManager_API.Services.Auth
 {
     public class UsuarioLogadoService : IUsuarioLogadoService
     {

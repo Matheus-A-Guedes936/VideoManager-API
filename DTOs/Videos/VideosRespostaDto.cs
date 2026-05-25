@@ -1,4 +1,4 @@
-﻿namespace GerenciadorDeVideos_API.DTOs.Videos
+﻿namespace VideoManager_API.DTOs.Videos
 {
     public class VideosRespostaDto
     {

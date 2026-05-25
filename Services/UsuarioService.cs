@@ -1,10 +1,10 @@
-﻿using GerenciadorDeVideos_API.DTOs.Usuarios;
-using GerenciadorDeVideos_API.Interface.IRepository;
-using GerenciadorDeVideos_API.Interface.IServices;
-using GerenciadorDeVideos_API.Interface.IServices.IAuth;
-using GerenciadorDeVideos_API.Model;
+﻿using VideoManager_API.DTOs.Usuarios;
+using VideoManager_API.Interface.IRepository;
+using VideoManager_API.Interface.IServices;
+using VideoManager_API.Interface.IServices.IAuth;
+using VideoManager_API.Model;
 
-namespace GerenciadorDeVideos_API.Services
+namespace VideoManager_API.Services
 {
     public class UsuarioService : IUsuarioService
     {
