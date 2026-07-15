@@ -13,7 +13,10 @@ namespace VideoManager_API.DTOs.Videos
         [EnumDataType(typeof(CategoriaVideo), ErrorMessage = "Categoria invalida.")]
         public CategoriaVideo Categoria { get; set; }
 
-        [Required(ErrorMessage = "Arquivo invalido.")]
+        [Required(ErrorMessage = "Arquivo de Vídeo invalido.")]
         public IFormFile ArquivoVideo { get; set; }
+
+        [Required(ErrorMessage = "Arquivo de Thumbnail invalido.")]
+        public IFormFile ArquivoThumb { get; set; }
     }
 }

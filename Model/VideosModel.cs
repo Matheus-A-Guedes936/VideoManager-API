@@ -12,5 +12,6 @@ namespace VideoManager_API.Model
         public string Titulo { get; set; }
         public CategoriaVideo Categoria { get; set; }
         public string? CaminhoVideo { get; set; }
-     }
+        public string? CaminhoVideoThumbnail { get; set; }
+    }
 }

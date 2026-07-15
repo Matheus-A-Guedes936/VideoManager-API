@@ -9,6 +9,8 @@
 
         public string CaminhoVideo { get; set; }
 
+        public string CaminhoVideoThumbnail { get; set; }
+
         public int UsuarioID { get; set; }
     }
 }
