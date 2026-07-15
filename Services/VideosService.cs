@@ -74,13 +74,27 @@ namespace VideoManager_API.Services
                 throw new BadHttpRequestException("O arquivo enviado é pequeno demais para ser um vídeo válido.");
             }
 
+            if (adicionarVideoDto.ArquivoThumb.Length < 1024)
+            {
+                throw new BadHttpRequestException("O arquivo de thumbnail enviado é pequeno demais para ser válido.");
+            }
+
             var pastaUsuario = Path.Combine(Directory.GetCurrentDirectory(),
                 "wwwroot",
                 "videos",
                 usuarioLogado.Value.ToString());
 
+            var pastaThumbs = Path.Combine(Directory.GetCurrentDirectory(),
+                "wwwroot",
+                "thumbnails",
+                usuarioLogado.Value.ToString());
+
             if (!Directory.Exists(pastaUsuario)){
                 Directory.CreateDirectory(pastaUsuario);
+            }
+
+            if (!Directory.Exists(pastaThumbs)){
+                Directory.CreateDirectory(pastaThumbs);
             }
 
             var nomeArquivo = $"{Guid.NewGuid().ToString() + Path.GetExtension(adicionarVideoDto.ArquivoVideo.FileName)}";
@@ -92,12 +106,22 @@ namespace VideoManager_API.Services
                 await adicionarVideoDto.ArquivoVideo.CopyToAsync(stream);
             }
 
+            var nomeArquivoThumb = $"{Guid.NewGuid().ToString() + Path.GetExtension(adicionarVideoDto.ArquivoThumb.FileName)}";
+
+            var caminhoCompletoThumb = Path.Combine(pastaThumbs, nomeArquivoThumb);
+
+            using (var stream = new FileStream(caminhoCompletoThumb, FileMode.Create))
+            {
+                await adicionarVideoDto.ArquivoThumb.CopyToAsync(stream);
+            }
+
             VideosModel videosModel = new VideosModel
             {
                 Titulo = adicionarVideoDto.Titulo,
                 Categoria = adicionarVideoDto.Categoria,
                 UsuarioID = usuarioLogado.Value,
-                CaminhoVideo = Path.Combine("videos", usuarioLogado.Value.ToString(), nomeArquivo)
+                CaminhoVideo = $"videos/{usuarioLogado.Value}/{nomeArquivo}",
+                CaminhoVideoThumbnail = $"thumbnails/{usuarioLogado.Value}/{nomeArquivoThumb}"
             };
 
             var videoCriado = await _videosRepository.AdicionarVideo(videosModel);
@@ -159,6 +183,7 @@ namespace VideoManager_API.Services
                 Titulo = video.Titulo,
                 Categoria = video.Categoria.ToString(),
                 CaminhoVideo = video.CaminhoVideo,
+                CaminhoVideoThumbnail = video.CaminhoVideoThumbnail,
                 UsuarioID = video.UsuarioID
             }
             ;
